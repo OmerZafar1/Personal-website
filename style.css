@@ -1,0 +1,637 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+#websites-main {
+    padding: 20px;
+}
+
+#websites-section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+    margin: 20px;
+}
+
+#websites-section h2 {
+    color: #333;
+    text-align: center;
+}
+
+#websites-section p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+#websites-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: auto;
+}
+
+#websites-list li {
+    background: #f9f9f9;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-left: 5px solid #0073e6;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#websites-list li:hover {
+    background: #eef7ff;
+}
+
+#websites-list a {
+    font-weight: bold;
+    color: #0073e6;
+    text-decoration: none;
+}
+
+#websites-list a:hover {
+    text-decoration: underline;
+}
+
+#gallery-section {
+    background: white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+    text-align: center;
+}
+
+#gallery-section h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+#gallery-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+.gallery video {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery video:hover {
+    transform: scale(1.05);
+}
+
+
+#contact-section {
+    background: white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+    text-align: center;
+}
+
+#contact-section h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+#contact-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+
+#login-section {
+    background: white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+    text-align: center;
+}
+
+#login-section h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+
+.register-btn {
+    display: inline-block;
+    background: #28a745;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.register-btn:hover {
+    background: #218838;
+}
+
+
+#register-section {
+    background: white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+    text-align: center;
+}
+
+#register-section h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+#container, #websites-section, #gallery-section, #contact-section, #login-section, #register-section {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%; /* Adjust as needed */
+}
+
+form {
+    width: 80%; /* Adjust as needed */
+    margin: auto;
+    text-align: center;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog-section {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.blog-summary {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+    margin-bottom: 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+
+#travel-blogs {
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#travel-blogs h2 {
+    text-align: center;
+}
+
+.blog-post-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping if the screen is too small */
+}
+
+.blog-post {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+    width: 30%; /* Adjust width as needed */
+    min-width: 250px; /* Ensures responsiveness */
+    text-align: center;
+}
+#my-courses {
+    text-align: center;
+    margin: 40px 0;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+.hobby-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+ul {
+    list-style: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
+}
+
+.hobby-section section {
+    text-align: center;
+}
+
+
+.hobby-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.hobby-category {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    width: 250px;
+    text-align: center;
+}
+
+
+.hobby-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hobby-category li {
+    background: #f0f0f0;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+#websites-section {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#websites-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#websites-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#websites-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+#websites-section li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+#websites-section li:hover {
+    background: #e0e0e0;
+}
+
+#websites-section a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#websites-section a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    transform: scale(1.05); 
+}
+
+
+nav a {
+    color: #ecf0f1; 
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 4px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  nav a:hover {
+    background-color: #3498db; 
+    color: #fff; 
+  }
+  
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  
+    margin: 0 auto;  
+    max-width: 500px;  
+    text-align: left;  
+}
+
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;  
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 12px;  
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;  
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;  
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);  
+}
+
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;  
+}
+
+button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);  
+}
+
+
+.register-btn, .login-btn {
+    background: #28a745;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.register-btn:hover, .login-btn:hover {
+    background: #218838;
+    transform: translateY(-2px);  /* Slight lift effect */
+}
+
+/* Container Styling for Sections */
+#register-section, #login-section {
+    background: white;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);  /* Box shadow for better depth */
+    text-align: center;
+}
+
+#register-section h2, #login-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+input, textarea, button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+input:focus, textarea:focus {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+    transform: translateY(-2px);  /* Slight lift effect */
+}
